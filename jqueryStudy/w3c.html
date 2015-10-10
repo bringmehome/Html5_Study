@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>W3C</title>
+</head>
+<script type="text/javascript">
+/**
+ * [trycatch]
+ * @return {[type]} [description]
+ */
+function trycatch() {
+    try {
+        alert("---");
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+function Lakers() {
+    this.name = "kobe bryant";
+    this.age = 28;
+    this.gender = "boy";
+}
+
+/**
+ * with
+ * @return {[type]} [description]
+ */
+function validate_required() {
+    var people = new Lakers();
+    with(people) {
+            var str = "姓名：" + name;
+            str += "年龄：" + age;
+            str += "性别：" + gender;
+            document.write(str);
+        }
+        // var str = "姓名 = " +people.name ;
+        // str += " 年龄 = " + people.age;
+        // str += " 性别 = "+ people.gender;
+        // document.write(str);
+}
+
+/**
+ * For( x in y)
+ * and forEach
+ * @return {[type]} [description]
+ */
+function forins() {
+    var person = {
+        name: "Rocke",
+        age: "22",
+        year: "1987",
+        lastname: "X",
+    };
+
+    var personarry = ["rocke", "29", "1988", "X"];
+    var text = "For====>";
+    console.debug(person);
+    for (item in person) {
+        text = text + " " + person[item];
+    }
+    console.debug(personarry);
+    text = text + "\r\nForEach====>";
+    personarry.forEach(function(item) {
+        text = text + " " + item;
+    });
+    console.debug(text);
+}
+
+/**
+ * 日期
+ */
+function setDate() {
+    var myDate = new Date()
+        //设置5天之后
+        // myDate.setDate(myDate.getDate() + 5);
+        //设置完整日期
+    myDate.setFullYear(2008, 7, 9);
+    console.debug(myDate);
+}
+
+/**
+ * 随机数
+ * @return {[type]} [description]
+ */
+function randomNumber(){
+    console.debug(Math.floor(Math.random()*10000000));
+}
+
+function Refexpxxx(){
+    var patt1 = new RegExp("e");
+    console.debug(patt1.test("The best things in life are free"));
+    
+    var personarry = patt1.exec("The best things in life are free");
+    console.debug(personarry);
+    patt1.compile("life");
+    console.debug(patt1.test("The best things in life are free"));
+    console.debug(patt1.exec("The best things in life are free"));
+}
+
+/**
+ * setTime Out 倒计时执行
+ * @type {Number}
+ */
+var cno = 0;
+function setTimeOUT(){
+    setTimeout(nouPlus, 3000);
+}
+
+function nouPlus(){
+    cno ++;
+    console.debug("= "+cno);
+}
+
+</script>
+
+<body>
+    <!-- <input type="button" onclick="validate_required()" value="TRY"> -->
+    <!-- <input type="button" onclick="forins()" value="FORIN"> -->
+    <!-- <input type="button" onclick="setDate()" value="setDate"> -->
+    <!-- <input type="button" onclick="randomNumber()" value="random"> -->
+    <!-- <input type="button" onclick="Refexpxxx()" value="Refexpxxx"> -->
+    <input type="button" onclick="setTimeOUT()" value="setTimeOUT">
+</body>
+
+</html>
