@@ -13,19 +13,26 @@
 </body>
 <script type="text/javascript">
 $("#hideid").click(function() {
-	//淡入淡出
-    console.debug("---fadeIn");
+    //淡入淡出
+    // console.debug("---fadeIn");
     //参数可以为空，"slow", "fast", "毫秒"
     // $("p").fadeIn(1000);
     // $("p").fadeOut(1000);
     // $("p").fadeToggle(1000);
-    $("p").fadeTo(1000, 0.15);
+    // $("p").fadeTo(1000, 0.15);
 
-	//隐藏或者显示
+    //隐藏或者显示
     // console.debug("---hide or toggle");
     // $("p").hide();
     // $("p").show();
     // $("p").toggle();
+    
+
+    //隐藏或者显示
+    console.debug("---hide or toggle");
+    $("p").slideDown(1000);
+    // $("p").slideUp(1000);
+    // $("p").slideToggle(1000);
 });
 </script>
 
