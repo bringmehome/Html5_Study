@@ -5,8 +5,21 @@
 
 >[jQuery效果](http://www.w3school.com.cn/jquery/jquery_fade.asp)
 >>隐藏或者显示
->>>hide() show() toggle()
+>>>hide(), show(), toggle()
 
 >>淡入淡出
->>>fadeIn() fadeOut() fadeToggle()
+>>>fadeIn(), fadeOut(), fadeToggle()
 
+>>滑动
+>>>slideDown(), slideUp(), slideToggle()
+
+>>动画
+>>>animate()
+```js
+    $("p").animate({
+        left: '250px',
+        opacity:'0.5',
+        height: '+=150px',
+        width: '+=150px',
+    }, 1000);
+```
