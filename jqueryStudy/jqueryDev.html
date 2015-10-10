@@ -5,10 +5,21 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <script type="text/javascript" src="./jquery-2.1.3.js"></script>
+    <style type="text/css">
+    .testClass{
+        color:white;
+        background-color: #962EEC;
+    }
+    </style>
 </head>
 
+
 <body>
-    <p style="background-color: #ccc;">我要隐藏</p>
+    <p>我要隐藏</p>
+    <p>88</p>
+    <p>77</p>
+    <p>我要隐藏66</p>
+    <p>80</p>
     <input type="button" id="hideid" value="隐藏" />
 </body>
 <script type="text/javascript">
@@ -35,15 +46,36 @@ $("#hideid").click(function() {
     // $("p").slideToggle(1000);    
 
     //滑动
-    console.debug("---hide or toggle");
-    // $("p").slideDown(1000);
-    // $("p").slideUp(1000);
-    $("p").animate({
-        left: '250px',
-        opacity: '0.5',
-        height: '+=150px',
-        width: '+=150px',
-    }, 1000);
+    // console.debug("---hide or toggle");
+    // // $("p").slideDown(1000);
+    // // $("p").slideUp(1000);
+    // $("p").animate({
+    //     left: '250px',
+    //     opacity: '0.5',
+    //     height: '+=150px',
+    //     width: '+=150px',
+    // }, 1000);
+
+    // //其他变态语法
+    // console.debug("---其他变态语法");
+    // $("p").css("color","red").slideUp(1000).slideDown(1000);
+    
+    //元素之前或者之后插入
+    // console.debug("---元素之前或者之后插入");
+    // $("p").prepend(" prepend ");
+    // $("p").before(" before ");
+    // $("p").after(" after ");
+    // $("p").append(" append ");
+    
+    // //CSS样式调整
+    // console.debug("---CSS样式调整");
+    // // $("p").addClass("testClass");
+    // // $("p").removeClass("testClass");
+    // $("p").toggleClass("testClass");
+
+    //获取同胞元素
+    console.debug("---获取同胞元素");
+    console.debug($("p").eq(3));
 });
 </script>
 
