@@ -78,3 +78,5 @@ $("p").toggleClass("testClass");
 >>**filter()** 方法允许您规定一个标准。不匹配这个标准的元素会被从集合中删除，匹配的元素会被返回
 
 >>**not()** 方法返回不匹配标准的所有元素
+
+[参考手册](http://www.w3school.com.cn/jquery/jquery_reference.asp)
