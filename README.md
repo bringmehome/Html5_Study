@@ -81,3 +81,9 @@ $("p").toggleClass("testClass");
 >>**not()** 方法返回不匹配标准的所有元素
 
 [参考手册](http://www.w3school.com.cn/jquery/jquery_reference.asp)
+
+
+2015-10-11
+[HTML5教程](http://www.w3school.com.cn/html5/index.asp)
+
+
