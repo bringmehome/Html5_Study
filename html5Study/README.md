@@ -15,7 +15,7 @@
 
 >>控制video, 暂停pause()、播放play()、控制尺寸(myVideo.width = 560)
 
-**如果用dom取可以直接取到，如果用jquery取需要用下标取[0]**, 因为获取到的是一个数组，具体见下图，也可以用 这个方法获取  **var myVideo = document.getElementById("videoid");** <br/>
+**如果用dom取可以直接取到(**var myVideo = document.getElementById("videoid");**)，如果用jquery取需要用下标取[0]**, 因为获取到的是一个数组，具体见下图:<br/>
 ![](./img/video.png)
 
 ```js
@@ -45,4 +45,28 @@ function showLocalStorage(){
 function cleanLocalStorage() {
 	localStorage.clear();
 }
+```
+
+>[HTML5Web存储](http://www.w3school.com.cn/css3/css3_border.asp)
+>>图片边框(border-image:url(border.png) 30 30 round;)
+```js
+border-image: url(http://www.w3school.com.cn/i/border.png) 10 10 round;
+```
+
+>[CSS3背景](http://www.w3school.com.cn/css3/css3_background.asp)
+>>图片自动撑满整个background，无叠加
+
+**重要** background-size需要写在background下面 **重要**
+
+有background-size的效果和无background-size的效果见下图<br/>
+![](./img/nothasbg.png)<br/>
+![](./img/hasbg.png)<br/>
+
+```js
+    width: 300px;
+    height: 300px;
+	background:url(http://preview.quanjing.com/minden001/min143606.jpg);
+	background-size:100px 100px;
+	background-repeat:no-repeat;
+	color: #FFF;
 ```
