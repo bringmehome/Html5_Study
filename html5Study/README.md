@@ -142,3 +142,40 @@ border-image: url(http://www.w3school.com.cn/i/border.png) 10 10 round;
 column-gap:30px;
 ```
 
+#[header](https://css-tricks.com/almanac/properties/d/display/)
+>顶部header左右平分，并悬浮于页面
+```js
+.containers {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    padding: 10px 0;
+    background: #EFF1F5;
+    position: fixed;
+    z-index: 9999;
+}
+
+.left {
+    flex: 1;
+    background: #ECBABA;
+}
+
+.main {
+    width: 60%;
+    background: #ACDCD0;
+}
+
+.right {
+    flex: 2;
+    background: #ECBABA;
+}
+```
+```js
+    <header class="containers">
+        <div class="left">左</div>
+        <div class="main">中</div>
+        <div class="right">右</div>
+    </header>
+    <p style="height:700px;background:green;opacity: 0.4;"></p>
+```

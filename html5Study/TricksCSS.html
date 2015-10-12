@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style type="text/css">
+.containers {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    padding: 10px 0;
+    background: #EFF1F5;
+    position: fixed;
+    z-index: 9999;
+}
+
+.left {
+    flex: 1;
+    background: #ECBABA;
+}
+
+.main {
+    width: 60%;
+    background: #ACDCD0;
+}
+
+.right {
+    flex: 2;
+    background: #ECBABA;
+}
+</style>
+
+<body>
+    <header class="containers">
+        <div class="left">左</div>
+        <div class="main">中</div>
+        <div class="right">右</div>
+    </header>
+    <p style="height:700px;background:green;opacity: 0.4;"></p>
+</body>
+
+</html>
