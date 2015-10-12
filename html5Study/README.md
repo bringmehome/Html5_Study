@@ -14,8 +14,6 @@
 ```
 
 >>控制video
-![](./img/video.png)
-
 ```js
 <video id="videoid" src="../../../../TempScene/profiles/mxchip.mp4" width="320" height="240" controls="controls">
     Your browser does not support the video tag.
@@ -25,7 +23,6 @@
 // var myVideo = document.getElementById("videoid");
 var myVideo1 = $("#videoid");
 var myVideo = myVideo1[0];
-
 function playPause() {
     console.debug(myVideo1);
     if (myVideo.paused)
@@ -33,17 +30,18 @@ function playPause() {
     else
         myVideo.pause();
 }
-
 function makeBig() {
     myVideo.width = 560;
 }
-
 function makeSmall() {
     myVideo.width = 320;
 }
-
 function makeNormal() {
     myVideo.width = 420;
 }
 ```
+如果用dom取可以直接取到，如果用jquery取需要用下标取[0], 因为获取到的是一个数组，具体见下图<br/>
+![](./img/video.png)
+
+
 
