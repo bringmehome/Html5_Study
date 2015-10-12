@@ -180,3 +180,31 @@ column-gap:30px;
     </header>
     <p style="height:700px;background:green;opacity: 0.4;"></p>
 ```
+
+
+>justify-content的方式实现
+
+效果如下图<br/>
+![](./img/justify.png)<br/>
+
+```js
+#main {
+  width: 400px;
+  padding: 20px 0;
+  border: 1px solid #c3c3c3;
+  display: flex;
+  justify-content: space-between; 
+}
+#main div {
+  width: 70px;
+  height: 70px;
+}
+```
+```js
+    <div id="main">
+        <div style="background-color:coral;"></div>
+        <div style="background-color:lightblue;"></div>
+        <div style="background-color:khaki;"></div>
+        <div style="background-color:pink;"></div>
+    </div>
+```

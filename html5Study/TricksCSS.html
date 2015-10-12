@@ -5,41 +5,29 @@
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
-<style type="text/css">
-.containers {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
-    padding: 10px 0;
-    background: #EFF1F5;
-    position: fixed;
-    z-index: 9999;
+<style> 
+#main {
+  width: 400px;
+  padding: 20px 0;
+  border: 1px solid #c3c3c3;
+  display: flex;
+  justify-content: space-around; 
+  /*justify-content: space-around; */
 }
 
-.left {
-    flex: 1;
-    background: #ECBABA;
-}
-
-.main {
-    width: 60%;
-    background: #ACDCD0;
-}
-
-.right {
-    flex: 2;
-    background: #ECBABA;
+#main div {
+  width: 70px;
+  height: 70px;
 }
 </style>
-
+</head>
 <body>
-    <header class="containers">
-        <div class="left">左</div>
-        <div class="main">中</div>
-        <div class="right">右</div>
-    </header>
-    <p style="height:700px;background:green;opacity: 0.4;"></p>
-</body>
 
+<div id="main">
+  <div style="background-color:coral;"></div>
+  <div style="background-color:lightblue;"></div>
+  <div style="background-color:khaki;"></div>
+  <div style="background-color:pink;"></div>
+</div>
+</body>
 </html>
