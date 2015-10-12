@@ -1,6 +1,7 @@
 #Html5的所有学习资料
 
 2015-10-10
+[JQUERY教程](http://www.w3school.com.cn/html5/index.asp)
 >[JS正则](http://www.w3school.com.cn/js/js_obj_regexp.asp)
 >>test()、exec() 以及 compile()
 
