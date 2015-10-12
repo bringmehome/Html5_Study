@@ -135,4 +135,10 @@ border-image: url(http://www.w3school.com.cn/i/border.png) 10 10 round;
 }
 ```
 
+>[CSS3 多列](http://www.w3school.com.cn/css3/css3_multiple_columns.asp)
+```js
+-webkit-column-rule:3px outset blue;
+-webkit-column-count:2; /* Safari and Chrome */
+column-gap:30px;
+```
 
