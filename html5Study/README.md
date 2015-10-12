@@ -70,3 +70,70 @@ border-image: url(http://www.w3school.com.cn/i/border.png) 10 10 round;
 	background-repeat:no-repeat;
 	color: #FFF;
 ```
+
+##--------------------------------华丽的分割线--------------------------------
+
+#[CSS3 3D 转换](http://www.w3school.com.cn/css3/css3_3dtransform.asp)
+
+>拉伸
+```js
+#transitionid {
+    width: 100px;
+    height: 100px;
+    background: green;
+    transition: width 1s;
+    color: white;
+}
+
+#transitionid:hover {
+    width: 300px;
+}
+```
+
+>将动画绑定到选择器
+```js
+#transitionid {
+    width: 100px;
+    height: 100px;
+    background: green;
+    transition: width 1s;
+    color: white;
+    animation: myfirst 5s;
+}
+
+@keyframes myfirst {
+    width: 300px;
+    from {
+        background: red;
+    }
+    to {
+        background: yellow;
+    }
+}
+```
+
+>当动画完成时，会变回初始的样式
+```js
+@keyframes myfirst {
+	0%   {background:red;}
+	25%  {background:yellow;}
+	50%  {background:blue;}
+	100% {background:black;}
+}
+```
+
+>画正方形
+```js
+
+    animation: myfirst 5s;
+    position:relative;
+}
+
+@keyframes myfirst {
+	0%   {background:red;left:0px; top:0px;}
+	25%  {background:yellow; left:200px; top:0px;}
+	50%  {background:blue;left:200px; top:200px;}
+	75%  {background:gray;left: 0px; top: 200px}
+	100% {background:black;left:0px; top:0px;}
+}
+```

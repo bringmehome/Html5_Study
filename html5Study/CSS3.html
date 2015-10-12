@@ -11,19 +11,43 @@
     /*padding: 10px 10px;*/
     border-image: url(http://www.w3school.com.cn/i/border.png) 10 10 round;
 }
-#bgsize{
+
+#bgsize {
     width: 300px;
     height: 300px;
-	background:url(http://preview.quanjing.com/minden001/min143606.jpg);
-	background-size:100px 100px;
-	background-repeat:no-repeat;
-	color: #FFF;
+    background: url(http://preview.quanjing.com/minden001/min143606.jpg);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    color: #FFF;
+}
+
+#transitionid {
+    width: 100px;
+    height: 100px;
+    background: green;
+    transition: width 1s;
+    color: white;
+    animation: myfirst 5s;
+    position:relative;
+}
+
+@keyframes myfirst {
+	0%   {background:red;left:0px; top:0px;}
+	25%  {background:yellow; left:200px; top:0px;}
+	50%  {background:blue;left:200px; top:200px;}
+	75%  {background:gray;left: 0px; top: 200px}
+	100% {background:black;left:0px; top:0px;}
+}
+
+#transitionid:hover {
+    width: 300px;
 }
 </style>
 
 <body>
     <!-- <div id="borderimg">你好</div> -->
-    <div id="bgsize">我是什么</div>
+    <!-- <div id="bgsize">我是什么</div> -->
+    <div id="transitionid">我是什么</div>
 </body>
 
 </html>
