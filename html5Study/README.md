@@ -84,7 +84,6 @@ border-image: url(http://www.w3school.com.cn/i/border.png) 10 10 round;
     transition: width 1s;
     color: white;
 }
-
 #transitionid:hover {
     width: 300px;
 }
@@ -100,7 +99,6 @@ border-image: url(http://www.w3school.com.cn/i/border.png) 10 10 round;
     color: white;
     animation: myfirst 5s;
 }
-
 @keyframes myfirst {
     width: 300px;
     from {
@@ -124,11 +122,10 @@ border-image: url(http://www.w3school.com.cn/i/border.png) 10 10 round;
 
 >画正方形
 ```js
-
+div{
     animation: myfirst 5s;
     position:relative;
 }
-
 @keyframes myfirst {
 	0%   {background:red;left:0px; top:0px;}
 	25%  {background:yellow; left:200px; top:0px;}
