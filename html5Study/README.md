@@ -208,3 +208,57 @@ column-gap:30px;
         <div style="background-color:pink;"></div>
     </div>
 ```
+
+>垂直居中**align-items: center;**
+
+效果如下图<br/>
+![](./img/aligncenter.png)<br/>
+
+```js
+#main {
+    width: 220px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+#main div {
+    flex: 1;
+}
+```
+```js
+    <div id="main">
+        <div style="background-color:coral;">红色</div>
+        <div style="background-color:lightblue;">蓝色</div>
+        <div style="background-color:lightgreen;">带有更多内容的绿色 div</div>
+    </div>
+```
+
+>重写元素属性**align-self: center;**
+
+效果如下图<br/>
+![](./img/alignself.png)<br/>
+
+```js
+#main {
+    width: 220px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    align-items: flex-start;
+}
+#main div {
+    flex: 1;
+}
+#myBlueDiv {
+    align-self: center;
+}
+```
+```js
+    <div id="main">
+        <div style="background-color:coral;">红色</div>
+        <div style="background-color:lightblue;" id="myBlueDiv">蓝色</div>
+        <div style="background-color:lightgreen;align-self: flex-end;">带有更多内容的绿色 div</div>
+    </div>
+    <p><b>注意：</b>align-self 属性可重写容器的 align-items 属性。</p>
+```
