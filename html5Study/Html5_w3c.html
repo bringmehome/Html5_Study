@@ -1,18 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>W3CのHTML5勉强</title>
+    <script type="text/javascript" src="./jquery-2.1.3.js"></script>
 </head>
 
 <body>
-    <video src="../../../../TempScene/profiles/mxchip.mp4" width="320" height="240" controls="controls">
+    <video id="videoid" src="../../../../TempScene/profiles/mxchip.mp4" width="320" height="240" controls="controls">
         Your browser does not support the video tag.
     </video>
-    <video width="320" height="240" controls="controls" autoplay="autoplay">
+    <!--<video id="videoid" width="320" height="240">
         <source src="../../../../TempScene/profiles/mxchip.mp4" type="video/mp4"> Your browser does not support the video tag.
-    </video>
+    </video> -->
+    <br/>
+    <input type="button" onclick="playPause()" value="playPause" />
+    <br/>
+    <input type="button" onclick="makeBig()" value="makeBig" />
+    <br/>
+    <input type="button" onclick="makeSmall()" value="makeSmall" />
+    <br/>
+    <input type="button" onclick="makeNormal()" value="makeNormal" />
+    <br/>
+    <input type="button" onclick="playPause()" value="playPause" />
+    <br/>
 </body>
+<script type="text/javascript">
+// var myVideo = document.getElementById("videoid");
+var myVideo1 = $("#videoid");
+var myVideo = myVideo1[0];
+
+function playPause() {
+    console.debug(myVideo1);
+    if (myVideo.paused)
+        myVideo.play();
+    else
+        myVideo.pause();
+}
+
+function makeBig() {
+    myVideo.width = 560;
+}
+
+function makeSmall() {
+    myVideo.width = 320;
+}
+
+function makeNormal() {
+    myVideo.width = 420;
+}
+</script>
 
 </html>
