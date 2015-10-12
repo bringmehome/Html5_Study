@@ -15,10 +15,6 @@
 
 >>控制video
 ```js
-<video id="videoid" src="../../../../TempScene/profiles/mxchip.mp4" width="320" height="240" controls="controls">
-    Your browser does not support the video tag.
-</video>
-
 var myVideo1 = $("#videoid");
 var myVideo = myVideo1[0];
 function playPause() {
