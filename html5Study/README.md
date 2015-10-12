@@ -56,7 +56,7 @@ border-image: url(http://www.w3school.com.cn/i/border.png) 10 10 round;
 >[CSS3背景](http://www.w3school.com.cn/css3/css3_background.asp)
 >>图片自动撑满整个background，无叠加
 
-**重要** background-size需要写在background下面 **重要**
+**重要** <span style="color:red;">background-size需要写在background下面</span> **重要**
 
 有background-size的效果和无background-size的效果见下图<br/>
 ![](./img/nothasbg.png)<br/>
