@@ -120,9 +120,9 @@ border-image: url(http://www.w3school.com.cn/i/border.png) 10 10 round;
 }
 ```
 
->画正方形
+>画正方形动作
 ```js
-.divcls{
+#transitionid {
     animation: myfirst 5s;
     position:relative;
 }
@@ -134,3 +134,5 @@ border-image: url(http://www.w3school.com.cn/i/border.png) 10 10 round;
 	100% {background:black;left:0px; top:0px;}
 }
 ```
+
+
