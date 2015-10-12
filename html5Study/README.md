@@ -1,4 +1,5 @@
 #Html5教程
+![](./img/video.png)
 
 2015-10-12
 >[视频](http://www.w3school.com.cn/html5/html_5_video.asp)
@@ -14,11 +15,8 @@
 ```
 
 >>控制video
-```js
-<video id="videoid" src="../../../../TempScene/profiles/mxchip.mp4" width="320" height="240" controls="controls">
-    Your browser does not support the video tag.
-</video>
 
+```js
 //如果用dom取可以直接取到，如果用jquery取需要用下标取[0]
 // var myVideo = document.getElementById("videoid");
 var myVideo1 = $("#videoid");
@@ -45,4 +43,3 @@ function makeNormal() {
 }
 ```
 
-![](./img/video.png)
