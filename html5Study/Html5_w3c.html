@@ -7,47 +7,52 @@
 </head>
 
 <body>
-    <video id="videoid" src="../../../../TempScene/profiles/mxchip.mp4" width="320" height="240" controls="controls">
+    <!--     <video id="videoid" src="../../../../TempScene/profiles/mxchip.mp4" width="320" height="240" controls="controls">
         Your browser does not support the video tag.
-    </video>
+    </video> -->
     <!--<video id="videoid" width="320" height="240">
         <source src="../../../../TempScene/profiles/mxchip.mp4" type="video/mp4"> Your browser does not support the video tag.
     </video> -->
-    <br/>
+    <!--     <br/>
     <input type="button" onclick="playPause()" value="playPause" />
     <br/>
     <input type="button" onclick="makeBig()" value="makeBig" />
-    <br/>
-    <input type="button" onclick="makeSmall()" value="makeSmall" />
-    <br/>
-    <input type="button" onclick="makeNormal()" value="makeNormal" />
-    <br/>
-    <input type="button" onclick="playPause()" value="playPause" />
-    <br/>
+    <br/> -->
+
+    <input type="button" onclick="saveLocalStorage()" value="saveLocalStorage" />
+    <input type="button" onclick="showLocalStorage()" value="showLocalStorage" />
+    <input type="button" onclick="cleanLocalStorage()" value="cleanLocalStorage" />
+
 </body>
 <script type="text/javascript">
+// video部分
 // var myVideo = document.getElementById("videoid");
-var myVideo1 = $("#videoid");
-var myVideo = myVideo1[0];
+// var myVideo1 = $("#videoid");
+// var myVideo = myVideo1[0];
 
-function playPause() {
-    console.debug(myVideo1);
-    if (myVideo.paused)
-        myVideo.play();
-    else
-        myVideo.pause();
+// function playPause() {
+//     console.debug(myVideo1);
+//     if (myVideo.paused)
+//         myVideo.play();
+//     else
+//         myVideo.pause();
+// }
+
+// function makeBig() {
+//     myVideo.width = 560;
+// }
+// 
+// 
+
+//localStorage 部分
+function saveLocalStorage() {
+    localStorage.loginame = "Rocke";
 }
-
-function makeBig() {
-    myVideo.width = 560;
+function showLocalStorage(){
+    console.debug(localStorage.loginame);
 }
-
-function makeSmall() {
-    myVideo.width = 320;
-}
-
-function makeNormal() {
-    myVideo.width = 420;
+function cleanLocalStorage() {
+	localStorage.clear();
 }
 </script>
 

@@ -13,10 +13,11 @@
 </video>
 ```
 
->>控制video
+>>控制video, 暂停pause()、播放play()、控制尺寸(myVideo.width = 560)
 ```js
 var myVideo1 = $("#videoid");
 var myVideo = myVideo1[0];
+
 function playPause() {
     console.debug(myVideo1);
     if (myVideo.paused)
@@ -24,18 +25,25 @@ function playPause() {
     else
         myVideo.pause();
 }
+
 function makeBig() {
     myVideo.width = 560;
 }
-function makeSmall() {
-    myVideo.width = 320;
-}
-function makeNormal() {
-    myVideo.width = 420;
-}
 ```
-**如果用dom取可以直接取到，如果用jquery取需要用下标取[0]**, 因为获取到的是一个数组，具体见下图，也可以用 这个方法获取  var myVideo = document.getElementById("videoid"); <br/>
+**如果用dom取可以直接取到，如果用jquery取需要用下标取[0]**, 因为获取到的是一个数组，具体见下图，也可以用 这个方法获取  **var myVideo = document.getElementById("videoid");** <br/>
 ![](./img/video.png)
 
 
-
+>[HTML5Web存储](http://www.w3school.com.cn/html5/html_5_webstorage.asp)
+>>localStorage
+```js
+function saveLocalStorage() {
+    localStorage.loginame = "Rocke";
+}
+function showLocalStorage(){
+    console.debug(localStorage.loginame);
+}
+function cleanLocalStorage() {
+	localStorage.clear();
+}
+```
