@@ -144,6 +144,10 @@ column-gap:30px;
 
 #[header](https://css-tricks.com/almanac/properties/d/display/)
 >顶部header左右平分，并悬浮于页面
+
+效果如下图<br/>
+![](./img/zindexheader.png)<br/>
+
 ```js
 .containers {
     width: 100%;
