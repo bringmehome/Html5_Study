@@ -155,17 +155,14 @@ column-gap:30px;
     position: fixed;
     z-index: 9999;
 }
-
 .left {
     flex: 1;
     background: #ECBABA;
 }
-
 .main {
     width: 60%;
     background: #ACDCD0;
 }
-
 .right {
     flex: 2;
     background: #ECBABA;
