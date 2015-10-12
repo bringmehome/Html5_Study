@@ -122,7 +122,7 @@ border-image: url(http://www.w3school.com.cn/i/border.png) 10 10 round;
 
 >画正方形
 ```js
-div{
+.divcls{
     animation: myfirst 5s;
     position:relative;
 }
