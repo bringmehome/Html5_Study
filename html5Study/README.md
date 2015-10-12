@@ -17,7 +17,6 @@
 ```js
 var myVideo1 = $("#videoid");
 var myVideo = myVideo1[0];
-
 function playPause() {
     console.debug(myVideo1);
     if (myVideo.paused)
@@ -25,11 +24,11 @@ function playPause() {
     else
         myVideo.pause();
 }
-
 function makeBig() {
     myVideo.width = 560;
 }
 ```
+
 **如果用dom取可以直接取到，如果用jquery取需要用下标取[0]**, 因为获取到的是一个数组，具体见下图，也可以用 这个方法获取  **var myVideo = document.getElementById("videoid");** <br/>
 ![](./img/video.png)<br/>
 
