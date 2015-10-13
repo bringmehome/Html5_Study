@@ -24,31 +24,129 @@
     #fontfamilyid {
         font-family: yumi;
     }
+    /*鼠标移到上面显示*/
     
-	/*鼠标移到上面显示*/
-	input[type="text"]:hover{
-		background-color: violet;
-	}
+    input[type="text"]:hover {
+        background-color: violet;
+    }
+    /*光标获取焦点*/
+    
+    input[type="text"]:focus {
+        background-color: #F3E9F5;
+    }
+    /*鼠标选中或者点击*/
+    
+    input[type="text"]:active {
+        background-color: green;
+    }
+    
+    input[type="checkbox"]:checked {
+        outline: 2px solid gold;
+    }
+    /*div的兄弟元素为p的画，执行以下样式*/
+    
+    div ~ p {
+        background-color: gold;
+    }
+    
+    #textbg {
+        border: 10px solid transparent;
+        width: 150px;
+        padding: 5px 10px;
+        -webkit-border-image: url(img/talk.png) 17 17 17 17;
+    }
+    
+    .divinline {
+        display: inline-block;
+        width: 200px;
+        background-color: red;
+        color: white;
+    }
+    
+    .spaninline {
+        display: inline;
+        background-color: blue;
+        color: white;
+    }
 
-	/*光标获取焦点*/
-	input[type="text"]:focus{
-		background-color: #F3E9F5;
-	}
+    .divlist{
+    	display: list-item;
+    	list-style-type: circle;
+    	margin-left: 30px;
+    	border: 1px dashed #0EE67C;
+    	margin-top: 5px;
+    }
 
-	/*鼠标选中或者点击*/
-	input[type="text"]:active{
-		background-color: green;
-	}
+    .boxbtn{
+    	box-shadow: 0 0 10px gray;
+    	width: 100px;
+    	color: green;
+    	font-size:16px;
+    }
+    .boxbtn:active{
+    	box-shadow: none;
+    	font-size:14px;
+    	background-color: gray;
+    }
+
+    #contentid{
+    	background-color: green;
+		box-sizing:content-box;
+		height: 100px;
+		width: 100px;
+		padding: 10px;
+    }
+
+    #borderid{
+		width: 100px;
+		height: 100px;
+		padding: 10px;
+    	background-color: blue;
+		box-sizing:border-box;
+    }
     </style>
 </head>
 
 <body>
+	<div id="contentid" src="img/content-box.png">content-box</div>
+	<div id="borderid">border-box</div>
+    <p></p>
+	<div class="boxbtn">这里是button</div>
+    <p></p>
+	<div class="divlist">div列表显示</div>
+	<div class="divlist">div列表显示</div>
+	<div class="divlist">div列表显示</div>
+	<div class="divlist">div列表显示</div>
+	<div class="divlist">div列表显示</div>
+    <p></p>
+    <div class="divinline">div内联和块元素</div>
+    <div class="divinline">div内联和块元素</div>
+    <p></p>
+    <span class="spaninline">spa内联和块元素</span>
+    <span class="spaninline">spa内联和块元素</span>
+    <p></p>
     <div id="fontid">文字阴影</div>
     <p></p>
     <div id="fontfamilyid">加载远程或者本地的字体</div>
     <p></p>
     <input type="text" name="name">
     <input type="text" name="age">
+    <p></p>
+    <input type="checkbox">阅读
+    <input type="checkbox">旅游
+    <input type="checkbox">电影
+    <input type="checkbox">上网
+    <p></p>
+    <div>
+        <div>
+            <p>P元素为div的子元素</p>
+            <p>P元素为div的子元素</p>
+        </div>
+        <p>P元素为div的子元素</p>
+        <p>P元素为div的子元素</p>
+        <p>P元素为div的子元素</p>
+    </div>
+    <div id="textbg">主要看文字的背景</div>
 </body>
 
 </html>
