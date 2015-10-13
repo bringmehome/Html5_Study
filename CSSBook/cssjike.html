@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>极客学院</title>
+    <style type="text/css">
+    #fontid {
+        /*(水平 垂直 模糊 阴影的颜色) 可以设置多个阴影*/
+        text-shadow: -5px 5px 5px red;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        background-image: url(./img/myiconicon.jpg);
+        height: 100px;
+        width: 100px;
+    }
+    
+    @font-face {
+        font-family: yumi;
+        src: url(img/yumi.ttf)format("truetype");
+    }
+    
+    #fontfamilyid {
+        font-family: yumi;
+    }
+    
+	/*鼠标移到上面显示*/
+	input[type="text"]:hover{
+		background-color: violet;
+	}
+
+	/*光标获取焦点*/
+	input[type="text"]:focus{
+		background-color: #F3E9F5;
+	}
+
+	/*鼠标选中或者点击*/
+	input[type="text"]:active{
+		background-color: green;
+	}
+    </style>
+</head>
+
+<body>
+    <div id="fontid">文字阴影</div>
+    <p></p>
+    <div id="fontfamilyid">加载远程或者本地的字体</div>
+    <p></p>
+    <input type="text" name="name">
+    <input type="text" name="age">
+</body>
+
+</html>
