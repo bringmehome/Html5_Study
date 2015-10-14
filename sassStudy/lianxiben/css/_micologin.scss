@@ -1,0 +1,39 @@
+.mico-login {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 5px;
+    .phone {
+        @extend .loginInput;
+    }
+    .password {
+        @extend .loginInput;
+    }
+    img {
+        width: 22px;
+        height: 22px;
+        padding: 9px 12px;
+    }
+}
+
+.loginInput {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+    border: 1px dotted #ccc;
+    input {
+    	outline: none;
+        border: 0px;
+        font-size: 16px;
+    }
+}
+
+.loginInput:active {
+	img{
+		padding: 0px 12px 20px 12px;
+	}
+}

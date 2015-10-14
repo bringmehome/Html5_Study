@@ -1,0 +1,86 @@
+html, body {
+  margin: 0;
+  border: 0;
+  padding: 0; }
+
+.mico-header {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  z-index: 9999; }
+  .mico-header .left {
+    flex: 1;
+    text-align: left; }
+  .mico-header .main {
+    width: 60%;
+    text-align: center; }
+  .mico-header .right {
+    flex: 1;
+    text-align: right; }
+
+.mico-footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 3; }
+
+.mico-login {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-radius: 5px; }
+  .mico-login img {
+    width: 22px;
+    height: 22px;
+    padding: 9px 12px; }
+
+.loginInput, .mico-login .phone, .mico-login .password {
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+  border: 1px dotted #ccc; }
+  .loginInput input, .mico-login .phone input, .mico-login .password input {
+    outline: none;
+    border: 0px;
+    font-size: 16px; }
+
+.loginInput:active img, .mico-login .phone:active img, .mico-login .password:active img {
+  padding: 0px 12px 20px 12px; }
+
+.mico-header {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding: 15px 0;
+  background: #F934E3; }
+  .mico-header .left {
+    background: #F934E3;
+    padding-left: 15px; }
+  .mico-header .main {
+    background: #F934E3; }
+  .mico-header .right {
+    background: #F934E3;
+    padding-right: 15px; }
+  .mico-header img {
+    height: 20px; }
+
+.mico-footer {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  background: #F934E3; }
+
+.mico-login .phone, .mico-login .password {
+  width: 80%; }
+
+/*# sourceMappingURL=index.css.map */
