@@ -28,32 +28,26 @@ html, body {
   left: 0;
   z-index: 3; }
 
-.mico-login {
+.mico-login .login-button {
+  background-color: #CCCCCC;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 12px 0px;
+  font-size: 16px; }
+
+.loginInput, .mico-login .phone, .mico-login .password {
+  border: 1px dotted #c3c3c3;
   display: flex;
-  height: 40px;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  box-sizing: border-box;
-  border-radius: 5px; }
-  .mico-login img {
+  flex-flow: row wrap;
+  margin-bottom: 10px; }
+  .loginInput img, .mico-login .phone img, .mico-login .password img {
     width: 22px;
     height: 22px;
     padding: 9px 12px; }
-
-.loginInput, .mico-login .phone, .mico-login .password {
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-bottom: 16px;
-  border: 1px dotted #ccc; }
   .loginInput input, .mico-login .phone input, .mico-login .password input {
     outline: none;
     border: 0px;
     font-size: 16px; }
-
-.loginInput:active img, .mico-login .phone:active img, .mico-login .password:active img {
-  padding: 0px 12px 20px 12px; }
 
 .mico-header {
   font-size: 16px;
@@ -80,7 +74,7 @@ html, body {
   padding: 15px 0;
   background: #F934E3; }
 
-.mico-login .phone, .mico-login .password {
-  width: 80%; }
+.mico-login {
+  margin: 0 20px; }
 
 /*# sourceMappingURL=index.css.map */

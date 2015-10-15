@@ -1,0 +1,35 @@
+.mico-login {
+    .phone {
+        @extend .loginInput;
+    }
+
+    .password {
+        @extend .loginInput;
+    }
+    .login-button{
+        background-color: #CCCCCC;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 12px 0px;
+        font-size: 16px;
+    }
+}
+
+
+
+.loginInput {
+    border: 1px dotted #c3c3c3;
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+    img {
+        width: 22px;
+        height: 22px;
+        padding: 9px 12px;
+    }
+    input {
+        outline: none;
+        border: 0px;
+        font-size: 16px;
+    }
+}

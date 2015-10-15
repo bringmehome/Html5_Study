@@ -1,6 +1,7 @@
 @import "micoglobal";
 @import "micoheader";
-@import "micologin";
+@import "login";
+// @import "micologin";
 
 .mico-header {
     font-size: 16px;
@@ -33,6 +34,6 @@
     background: #F934E3;
 }
 
-.mico-login .phone, .mico-login .password {
-	width: 80%;
+.mico-login{
+    margin: 0 20px;
 }
